@@ -1,4 +1,4 @@
-# Reverse an Array
+# Array Shift
 <!-- Short summary or background information -->
 
 ## Challenge
