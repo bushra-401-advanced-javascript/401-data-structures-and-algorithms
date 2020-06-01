@@ -1,6 +1,6 @@
 'use strict';
 
-const LinkedList = require('../linked-list');
+const LinkedList = require('../LL/linked-list');
 
 describe('Functionality # 1: Can successfully instantiate an empty linked list', () => {
   it('LinkedList constructor() -- an empty list will have a head of value NULL', () => {

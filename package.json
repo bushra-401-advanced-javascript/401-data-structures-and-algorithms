@@ -1,0 +1,24 @@
+{
+  "name": "401-data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "Challenge # | Link\r ------------|-----\r 1 | [Array Reverse](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/arrayReverse)\r 2 | [Array Shift](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/arrayShift)\r 3 | [Array Binary Search](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/arrayBinarySearch)\r 4 | [Generating Fibonacci Numbers](https://repl.it/@BshBil/Code-Challenge-04#index.js)\r 5 | [Singly Linked Lists](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/linkedList)\r 6 | [Linked Lists - Insertions](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/linkedList-2)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms#readme",
+  "dependencies": {
+    "eslint": "^7.1.0",
+    "jest": "^26.0.1"
+  }
+}
