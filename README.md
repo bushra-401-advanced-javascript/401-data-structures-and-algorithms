@@ -6,7 +6,7 @@
 
 Challenge # | Link
 ------------|-----
-1 | [Array Reverse]()
+1 | [Array Reverse](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/arrayReverse)
 2 | [Array Shift]()
 3 | [Array Binary Search]()
 4 | [Generating Fibonacci Numbers](https://repl.it/@BshBil/Code-Challenge-04#index.js)
