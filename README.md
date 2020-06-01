@@ -11,4 +11,4 @@ Challenge # | Link
 3 | [Array Binary Search](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/arrayBinarySearch)
 4 | [Generating Fibonacci Numbers](https://repl.it/@BshBil/Code-Challenge-04#index.js)
 5 | [Singly Linked Lists](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/linkedList)
-6 | [Linked Lists - Insertions]()
+6 | [Linked Lists - Insertions](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/linkedList-2)
