@@ -84,7 +84,7 @@ class LinkedList {
       return this;
     }
     let currentNode = this.head;
-    while (currentNode.next) {                   //[H] --> (1) --> (2) --> (3) --> (4) --> [x]
+    while (currentNode.next) {                   
       if (currentNode.next.value === value) {   //[H] --> (1) --> (2) --> (4) --> [x]
         newNode.next = currentNode.next;       //value =  4, newValue = 3 
         currentNode.next = newNode;          //@currentNode = (2) --> (4) --> [x], newNode = (3) --> [x]
@@ -92,7 +92,7 @@ class LinkedList {
       }                                                           //  ^
       else { currentNode = currentNode.next; }                  //   |
     }                                                          //   (3)
-    return 'Exception';                                    
+    return 'Exception';                  //[H] --> (1) --> (2) --> (3) --> (4) --> [x]                             
   }
 
   insertAfter(value, newValue) {
