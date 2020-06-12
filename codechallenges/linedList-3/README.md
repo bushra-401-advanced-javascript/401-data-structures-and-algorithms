@@ -31,12 +31,10 @@ Add a method to the previous LL calss:
 ## WhiteBoard / CI
 - [Github Actions](https://github.com/bushra-401-advanced-javascript/data-structures-and-algorithms/actions?query=is%3Asuccess)  
 
-![whiteboard - Problem Domain](./assets/cc05-linked_lists-problem_domain.png)
+![whiteboard - Problem Domain & Algorithim](./assets/cc7.jpg)
 
-![whiteboard - Algorithim](./assets/cc05-linked_lists-algorithim.png)
+![whiteboard - Psuedo Code](./assets/cc7-psuedo.jpg)
 
-![whiteboard - Psuedo Code](./assets/cc05-linked_lists-psuedo_code.png)
-
-![whiteboard - Visual](./assets/cc05-linked_lists-visual.jpg)
+![whiteboard - Big O](./assets/cc7-bigo.jpg)
 
 
