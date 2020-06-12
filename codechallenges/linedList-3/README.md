@@ -28,8 +28,7 @@ Add a method to the previous LL calss:
 - Space Complexity:
   - O(1)
 
-## WhiteBoard / CI
-- [Github Actions](https://github.com/bushra-401-advanced-javascript/data-structures-and-algorithms/actions?query=is%3Asuccess)  
+## WhiteBoard
 
 ![whiteboard - Problem Domain & Algorithim](./assets/cc7.jpg)
 
