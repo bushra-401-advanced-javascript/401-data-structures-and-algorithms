@@ -1,7 +1,64 @@
 'use strict';
 
-const LinkedList = require('../linked-list');
+const LinkedList = require('../codechallenges/linedList-3/linked-list-kth-from-end');
 
+//CC07 functionalities
+describe('\nUnit Test 1: k is greater than the length of the linked list\n', () => {
+  it('LinkedList kthFromEnd() method', () => {
+    let list = new LinkedList();
+    list.insert(1);
+    list.insert(2);
+    list.insert(3);
+    list.insert(4);
+    expect(list.kthFromEnd(4)).toEqual('Exception');
+  });
+});
+
+describe('\nUnit Test 2: k and the length of the list are the same\n', () => {
+  it('LinkedList kthFromEnd() method', () => {
+    let list = new LinkedList();
+    list.insert(1);
+    list.insert(2);
+    list.insert(3);
+    list.insert(4);
+    expect(list.kthFromEnd(3)).toEqual(list.head.value);
+  });
+});
+
+describe('\nUnit Test 3: k is not a positive integer\n', () => {
+  it('LinkedList kthFromEnd() method', () => {
+    let list = new LinkedList();
+    list.insert(1);
+    list.insert(2);
+    list.insert(3);
+    list.insert(4);
+    expect(list.kthFromEnd(-2.5)).toEqual('Invalid Input!\nK Must Be A Positive Integer.');
+  });
+});
+
+describe('\nUnit Test 4: the linked list is of a size 1\n', () => {
+  it('LinkedList kthFromEnd() method', () => {
+    let list = new LinkedList();
+    list.insert(1);
+    expect(list.kthFromEnd(0)).toEqual(list.head.value);
+    expect(list.kthFromEnd(1)).toEqual('Exception');
+  });
+});
+
+describe('\nUnit Test 5: “Happy Path” where k is not at the end, but somewhere in the middle of the linked list\n', () => {
+  it('LinkedList kthFromEnd() method', () => {
+    let list = new LinkedList();
+    list.insert(1);
+    list.insert(2);
+    list.insert(3);
+    list.insert(4);
+    expect(list.kthFromEnd(2)).toEqual(list.head.next.value);
+  });
+});
+
+
+
+//prev functionalities
 describe('Functionality # 1: Can successfully instantiate an empty linked list', () => {
   it('LinkedList constructor() -- an empty list will have a head of value NULL', () => {
     let list = new LinkedList();
