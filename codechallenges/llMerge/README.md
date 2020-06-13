@@ -29,8 +29,6 @@ Create a stand-alone function that uses the Node class and LinkedList class from
 
   ## WhiteBoard
 
-![whiteboard - Problem Domain](./assets/cc6-1.png)
+![whiteboard - Problem Domain - Visual](./assets/cc8-problem-visual.jpg)
 
-![whiteboard - Algorithim](./assets/cc6-2.png)
-
-![whiteboard - Psuedo Code](./assets/cc6-3.png)
+![whiteboard - Algorithim - Psuedo Code - Big O](./assets/cc8-algo-pusedo-bigo.jpg)
