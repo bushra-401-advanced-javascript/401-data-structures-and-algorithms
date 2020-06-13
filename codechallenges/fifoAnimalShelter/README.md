@@ -42,4 +42,4 @@ Create a class called AnimalShelter that implements a queue following the FIFO a
 
 ![whiteboard - Problem Domain - Visual](./assets/cc12-problem-visual.jpg)
 
-![whiteboard - Algorithim - Psuedo Code - Big O](./assets/cc9-algo-pusedo-bigo.jpg)
+![whiteboard - Algorithim - Psuedo Code - Big O](./assets/cc12-algo-psuedo-bigo.jpg)
