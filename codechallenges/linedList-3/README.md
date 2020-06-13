@@ -11,52 +11,29 @@ The last node in the list points to Null.
 - In a Singly LL nodes can be accessed only through the head and the next pointers by traversing the list in one direction, starting from the node at head.
 
 ## Challenge Description 
-**JS Singly Linked List Implementation**  
-Implement Singly LLs in JS by creating a Node Class, and a Linked List Class with 3 methods:
-- insert --> to add a Node at head
-- includes --> to check if a given value exists in the list
-- toString --> a string representation of all the Nodes in the list (string scheme of the list)  
-i.e. : `"{ a } -> { b } -> { c } -> NULL"`
+**JS Singly Linked List Implementation - Finding the kth Node From End**  
+Add a method to the previous LL calss:
+- a `kthFromEnd()` method that given a number k, returns the value of the kth node from the end of the LL
+
 
 ## Approach & Efficiency
 **Approach**  
-- defining the classes for the Node and the Linked List
+- using conditional statements and loops (while an for)
+- dealing with the LL implementation directly using the LL class without using the array implementation
 - visualizing the LL with an example to help impleminting the features and methods  
-i.e. :
-```javascript 
-//creating an empty LL
-LL: [H] -> Null;
 
-//Adding a Node to the LL
-N: (1) -> Null;
-LL: [H] -> (1) -> Null;
-
-//inserting at head
-LL: [H] -> (1) -> (2) -> Null;
-N: (3) -> Null;
-=> [H] -> (1) -> (2) -> Null
-           ^
-           |
-          (3);
-=> [H] -> (3) -> (1) -> (2) -> Null;
-
-```
 **Efficiency: Big O Notation**  
-- Time Complexity:
-  - O(1) --> inserting Nodes in the LL
-  - O(n) --> traversing the LL to search for a value
+- Time Complexity (kth from end method):
+  - O(n^2)
 - Space Complexity:
-  - O(n)
+  - O(1)
 
-## WhiteBoard / CI
-- [Github Actions](https://github.com/bushra-401-advanced-javascript/data-structures-and-algorithms/actions?query=is%3Asuccess)  
+## WhiteBoard
 
-![whiteboard - Problem Domain](./assets/cc05-linked_lists-problem_domain.png)
+![whiteboard - Problem Domain & Algorithim](./assets/cc7.jpg)
 
-![whiteboard - Algorithim](./assets/cc05-linked_lists-algorithim.png)
+![whiteboard - Psuedo Code](./assets/cc7-psuedo.jpg)
 
-![whiteboard - Psuedo Code](./assets/cc05-linked_lists-psuedo_code.png)
-
-![whiteboard - Visual](./assets/cc05-linked_lists-visual.jpg)
+![whiteboard - Big O](./assets/cc7-bigo.jpg)
 
 

@@ -18,6 +18,7 @@ creating a Linked List class:
 --> an `insert()` method that given a value, adds a Node with this value to the head of the list (adds to the beginning of the list)
 --> an `includes()` method that given a value, checks if this value exists as a Node's value and returns a boolean
 --> a `toString()` method that takes no argument and returns a string representation of the linked list, i.e. : "{ a } -> { b } -> { c } -> NULL"
+--> a `kthFromEnd()` method that given a number k, returns the value of the kth node from the end of the LL
 */
 
 //////////////////////////////////////////////////////////////
@@ -78,15 +79,27 @@ class LinkedList {
     return JSON.stringify(nodeString + 'NULL');  //note that if the list is empty it will return only "NULL"
   }
 
-  kthFromEnd(val) {
-    let allNodes = [this.head];
+  kthFromEnd(k) {
+    //edg cases
+    if (k < 0 || k != Math.floor(k)) return 'Invalid Input!\nK Must Be A Positive Integer.';
+    if (!this.head) return 'Linked List Is Empty..';
+
+    let i = 0; //counter to count the length of the LL
     let currentNode = this.head;
+    //traversing through the list and counting its length
     while(currentNode.next) {
       currentNode = currentNode.next;
-      allNodes.push(currentNode);
+      i++;
     }
-    let idx = allNodes.length - val;
-    return allNodes[idx].value;
+    //edg case
+    if (k > i) return 'Exception';
+    //finding kth node from end
+    const diff = i - k;
+    currentNode = this.head;
+    for (let j = 0; j <= diff; j++) {
+      if (j === diff) return currentNode.value;
+      currentNode = currentNode.next;
+    }
   }
 }
 
