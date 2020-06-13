@@ -23,7 +23,7 @@ Create a stand-alone function that uses the Node class and LinkedList class from
 
 **Efficiency: Big O Notation**  
 - Time Complexity:
-  - O(n) --> using a while loop
+  - O(n + m) --> where n, m are the number of nodes for LL1, LL2 / looping through 2 LL's
 - Space Complexity:
   - O(n) --> creating a new LL
 
