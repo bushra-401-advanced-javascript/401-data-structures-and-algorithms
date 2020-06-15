@@ -18,3 +18,7 @@ Challenge # | Link
 10 | [Stack and a Queue Implementation](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/stack-and-queue/codechallenges/stacksAndQueues)
 11 | [Queue Implementation With Two Stacks](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/queue-with-stacks/codechallenges/queueWithStacks)
 12 | [Queue FIFO Approach](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/fifo-animal-shelter/codechallenges/fifoAnimalShelter)
+13 | [Multi-bracket Validation]()
+14 | [Eeney Meeney Miney Moe](###)
+15 | [Binary Tree and BST Implementation](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/tree)
+16 | [FizzBuzz Tree](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/fizzBuzzTree)
