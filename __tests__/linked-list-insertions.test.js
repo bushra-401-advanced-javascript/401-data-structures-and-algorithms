@@ -1,7 +1,90 @@
 'use strict';
 
-const LinkedList = require('../linked-list');
+const LinkedList = require('../codechallenges/linkedList-2/linked-list');
 
+//Tests for  linked-list-insertions methods and functionalities (append, insertBefore, insertAfter)
+describe('\n  Unit Test 1: Can successfully add a node to the end of the linked list', () => {
+  it('LinkedList append() method\n', () => {
+    let list = new LinkedList();
+    const newNode = 'new Node';
+    list.append(newNode);
+    expect(list.head.value).toEqual(newNode);
+    expect(list.head.next).toBeNull();
+  });
+});
+
+describe('\n  Unit Test 2: Can successfully add multiple nodes to the end of a linked list', () => {
+  it('LinkedList append() method\n', () => {
+    let list = new LinkedList();
+    list.append('1');
+    let currentNode = list.head;
+    const nodes = ['2', '3', '4'];
+    nodes.forEach(node => {
+      list.append(node);
+      expect(currentNode.next.value).toEqual(node);
+      currentNode = currentNode.next;
+    });
+  });
+});
+
+describe('\n  Unit Test 3: Can successfully insert a node before a node located in the middle of a linked list', () => {
+  it('LinkedList insertBefore() method\n', () => {
+    let list = new LinkedList();
+    const nodes = ['1', '3', '4'];
+    // let midNode = nodes[Math.floor(nodes.length/2)];
+    //filling up the list
+    nodes.forEach(node => list.append(node));
+    //insert before the middle node
+    let currentNode = list.head;
+    const newValue = '2';
+    list.insertBefore(currentNode.next.value, newValue);
+    expect(currentNode.next.value).toEqual(newValue);
+  });
+});
+
+describe('\n  Unit Test 4: Can successfully insert a node before the first node of a linked list', () => {
+  it('LinkedList insertBefore() method\n', () => {
+    let list = new LinkedList();
+    const nodes = ['1', '3', '4'];
+    //filling up the list
+    nodes.forEach(node => list.append(node));
+    //insert before the first node
+    const newValue = '5';
+    list.insertBefore(list.head.value, newValue);
+    expect(list.head.value).toEqual(newValue);
+  });
+});
+
+describe('\n  Unit Test 5: Can successfully insert a node after a node located in the middle of a linked list', () => {
+  it('LinkedList insertAfter() method\n', () => {
+    let list = new LinkedList();
+    const nodes = ['1', '2', '4'];
+    // let midNode = nodes[Math.floor(nodes.length/2)];
+    //filling up the list
+    nodes.forEach(node => list.append(node));
+    //insert after the middle node
+    let currentNode = list.head;
+    const newValue = '3';
+    list.insertAfter(currentNode.next.value, newValue);
+    expect(currentNode.next.next.value).toEqual(newValue);
+  });
+});
+
+describe('\n  Unit Test 6: Can successfully insert a node after the last node of a linked list', () => {
+  it('LinkedList insertBefore() method\n', () => {
+    let list = new LinkedList();
+    const nodes = ['1', '2', '3'];
+    //filling up the list
+    nodes.forEach(node => list.append(node));
+    //insert after the last node
+    const newValue = '4';
+    list.insertAfter(list.head.next.next.value, newValue);
+    expect(list.head.next.next.next.value).toEqual(newValue);
+  });
+});
+
+
+//Tests for previous methods and functionalities
 describe('Functionality # 1: Can successfully instantiate an empty linked list', () => {
   it('LinkedList constructor() -- an empty list will have a head of value NULL', () => {
     let list = new LinkedList();

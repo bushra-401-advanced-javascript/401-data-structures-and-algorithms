@@ -11,52 +11,46 @@ The last node in the list points to Null.
 - In a Singly LL nodes can be accessed only through the head and the next pointers by traversing the list in one direction, starting from the node at head.
 
 ## Challenge Description 
-**JS Singly Linked List Implementation**  
-Implement Singly LLs in JS by creating a Node Class, and a Linked List Class with 3 methods:
-- insert --> to add a Node at head
-- includes --> to check if a given value exists in the list
-- toString --> a string representation of all the Nodes in the list (string scheme of the list)  
-i.e. : `"{ a } -> { b } -> { c } -> NULL"`
+**JS Singly Linked List Insertions**  
+Complete on the Singly LL implemented in the previous challenge, and add these 3 methods:
+- append(value) --> to add a Node at the end of the LL
+- insertBefore(value, newVal) --> to add a Node before a specific Node
+- insertAfter(value, newVal) --> to add a Node after a specific Node  
 
 ## Approach & Efficiency
 **Approach**  
 - defining the classes for the Node and the Linked List
+- impleminting the methods using conditional if statements and while loops
 - visualizing the LL with an example to help impleminting the features and methods  
 i.e. :
 ```javascript 
-//creating an empty LL
-LL: [H] -> Null;
-
-//Adding a Node to the LL
-N: (1) -> Null;
+//append(value)
 LL: [H] -> (1) -> Null;
+append(2): [H] -> (1) -> (2) -> Null;
 
-//inserting at head
-LL: [H] -> (1) -> (2) -> Null;
-N: (3) -> Null;
-=> [H] -> (1) -> (2) -> Null
-           ^
-           |
-          (3);
-=> [H] -> (3) -> (1) -> (2) -> Null;
+//insertBefore(value, newValue)
+LL: [H] --> (1) --> (2) --> (4) --> [x];
+insertBefore(4, 3): [H] --> (1) --> (2) --> (3) --> (4) --> [x]; 
+
+//insertAfter(value, newValue)
+LL: [H] --> (1) --> (2) --> (3) --> [x];
+insertAfter(3, 4): [H] --> (1) --> (2) --> (3) --> (4) --> [x];
 
 ```
 **Efficiency: Big O Notation**  
 - Time Complexity:
-  - O(1) --> inserting Nodes in the LL
-  - O(n) --> traversing the LL to search for a value
+  - O(n) --> for all methods
 - Space Complexity:
-  - O(n)
+  - O(1) for all methods
 
 ## WhiteBoard / CI
 - [Github Actions](https://github.com/bushra-401-advanced-javascript/data-structures-and-algorithms/actions?query=is%3Asuccess)  
 
-![whiteboard - Problem Domain](./assets/cc05-linked_lists-problem_domain.png)
+![whiteboard - Problem Domain](./assets/cc6-1.png)
 
-![whiteboard - Algorithim](./assets/cc05-linked_lists-algorithim.png)
+![whiteboard - Algorithim](./assets/cc6-2.png)
 
-![whiteboard - Psuedo Code](./assets/cc05-linked_lists-psuedo_code.png)
+![whiteboard - Psuedo Code](./assets/cc6-3.png)
 
-![whiteboard - Visual](./assets/cc05-linked_lists-visual.jpg)
 
 

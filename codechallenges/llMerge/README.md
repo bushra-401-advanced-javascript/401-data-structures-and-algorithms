@@ -1,4 +1,4 @@
-# Singly Linked Lists 
+# Singly Linked Lists - Merge Two LL's In An Alternating Manner
 
 ## Background Summary
 - Linked Lists are a dynamic type of data structures.  
@@ -11,29 +11,24 @@ The last node in the list points to Null.
 - In a Singly LL nodes can be accessed only through the head and the next pointers by traversing the list in one direction, starting from the node at head.
 
 ## Challenge Description 
-**JS Singly Linked List Implementation - Finding the kth Node From End**  
-Add a method to the previous LL calss:
-- a `kthFromEnd()` method that given a number k, returns the value of the kth node from the end of the LL
-
+**JS Singly Linked Lists Merging**  
+Create a stand-alone function that uses the Node class and LinkedList class from previous challenges:
+- accepts 2 LL's and merges them into a new zipped LL with alternating nodes. 
 
 ## Approach & Efficiency
 **Approach**  
-- using conditional statements and loops (while an for)
-- dealing with the LL implementation directly using the LL class without using the array implementation
-- visualizing the LL with an example to help impleminting the features and methods  
+- importing the classes for the Node and the Linked List
+- creating a new function that uses conditiona statements and a while loop to merge the two given lists
+- visualizing the zipped LL with an example to help impleminting the features and methods 
 
 **Efficiency: Big O Notation**  
-- Time Complexity (kth from end method):
-  - O(n^2)
+- Time Complexity:
+  - O(n + m) --> where n, m are the number of nodes for LL1, LL2 / looping through 2 LL's
 - Space Complexity:
-  - O(1)
+  - O(n) --> creating a new LL
 
-## WhiteBoard
+  ## WhiteBoard
 
-![whiteboard - Problem Domain & Algorithim](./assets/cc7.jpg)
+![whiteboard - Problem Domain - Visual](./assets/cc8-problem-visual.jpg)
 
-![whiteboard - Psuedo Code](./assets/cc7-psuedo.jpg)
-
-![whiteboard - Big O](./assets/cc7-bigo.jpg)
-
-
+![whiteboard - Algorithim - Psuedo Code - Big O](./assets/cc8-algo-pusedo-bigo.jpg)
