@@ -31,3 +31,8 @@ Define a method named contains that accepts a value, and returns a boolean indic
 
 ## Whiteboard
 
+![Problem - Algo](./assets/cc15-1.png)
+![Psuedo](./assets/cc15-2.png)
+![BT Visual](./assets/IMG_20200615_194739.jpg)
+![BST Visual](./assets/IMG_20200615_194644.jpg)
+
