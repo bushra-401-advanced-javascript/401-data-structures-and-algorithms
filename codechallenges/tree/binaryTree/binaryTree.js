@@ -1,6 +1,7 @@
 'use strict';
 
-const BinaryTree = require('../tree');
+const Tree = require('../tree');
+const BinaryTree = Tree.BinaryTree;
 
 class BreadthFirst extends BinaryTree {
 
