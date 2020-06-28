@@ -22,3 +22,4 @@ Challenge # | Link
 14 | [Eeney Meeney Miney Moe](###)
 15 | [Binary Tree and BST Implementation](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/tree)
 16 | [FizzBuzz Tree](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/fizzBuzzTree)
+17 | [Breadth-First Binary Tree](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/breadth-first/codechallenges/tree/binaryTree)
