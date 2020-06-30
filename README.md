@@ -25,4 +25,5 @@ Challenge # | Link
 17 | [Breadth-First Binary Tree](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/breadth-first/codechallenges/tree/binaryTree)
 18 | [FizzBuzz Tree](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/fizzBuzzTree)
 19 | [Binary Tree Sum](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/blob/binary-tree-sum/codechallenges/tree/binaryTree/binaryTree.js)
-26 | [Insertion Sort]()
+26 | [Insertion Sort](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/insertionSort)
+27 | [Merge Sort]()
