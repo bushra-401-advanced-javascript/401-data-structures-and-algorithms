@@ -6,6 +6,7 @@ class Node {
     this.next = null;
   }
 }
+//////////////////
 
 class LinkedList {
   constructor() {
@@ -38,45 +39,63 @@ class LinkedList {
     return values;
   }
 }
+//////////////////
 
 class Hashmap {
   constructor(size) {
     this.size = size;
-    this.map = new Array(size);
+    this.table = new Array(size);
   }
 
   hash(key) { 
-    // I will hash my key to get the index of where to store my data.
+    // hash the key to get the index of where to store the data.
     return key.split('').reduce((p, n) => {
-      return p + n.charCodeAt(0)
+      return p + n.charCodeAt(0);
     }, 0) * 599 % this.size;
   }
 
-  set(key, value) {
-    // add to our hashmap
-    // 1st get me the hashed of my key
-    // if the key does not exist in my map(new Array) then create it and add the new linkedlist to it, and add to the linkedlist
-    // if this resulting key existed in the map then add to it.
-        
-    // {'stuff': 'laptop'}
-    // hash stuff
-    // 1456 : LinkedList has previosly added values so just add Headers
-    // 1456 : create LinkedList and then add {'stuff': 'laptop'} to it
-
+  add(key, value) {
     let hash = this.hash(key);
-    if (!this.map[hash]) {
-      this.map[hash] = new LinkedList();
+    if (!this.table[hash]) {
+      this.table[hash] = new LinkedList();
     }
     // pass entry to the map 
     // using object, you can use anything
     let entry = {[key]: value};
     // add to our linkedlist
-    this.map[hash].add(entry);
+    this.table[hash].add(entry);
   }
 
-  get() {
+  get(key) {
     // find a key in the hashmap and return its value
+    let hash = this.hash(key);
+    if (this.table[hash]) {
+      let values = this.table[hash].values(); //array of the data entries in the LL (at the hashed index)
+      values.forEach((entry, i) => {
+        if(Object.keys(entry)[0] === key) {
+          return Object.values(entry);
+        }
+      });
+    }
+    else {
+      return 'This key doesn\'t exist in the table :(';
+    }
   }
-
-
+  
+  contains(key) {
+    let hash = this.hash(key);
+    if (this.table[hash]) {
+      let values = this.table[hash].values(); //array of the data entries in the LL (at the hashed index)
+      values.forEach((entry) => {
+        if(Object.keys(entry)[0] === key) {
+          return true;
+        }
+        else return false;
+      });
+    }
+    else {
+      return false;
+    }  
+  }
 }
+

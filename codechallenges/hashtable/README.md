@@ -1,5 +1,16 @@
 # Hashtable (Hashmaps) Implementation
 
+## Background
+
+Hashtables are data structure store data (key/value pairs) in an associative manner in an array format  
+> keys are mapped to array positions by a hash function (algorithm)
+
+Hashtables are very efficient and fast in retrieval of stored data, because a value stored in a hashtable can be searched in `O(1)` time, by using the same hash function that generates and address (indexed position) from the key.
+
+The process of mapping keys to index locations is called _hashing_.
+
+[Useful video](https://www.youtube.com/watch?v=KyUTuwz_b7Q)
+
 ## Challenge Description
 
 Implement a Hashtable with the following methods:
@@ -16,10 +27,14 @@ Implement a Hashtable with the following methods:
 ### Big O
 
 - Time Complexity:
-  O(n)
+  - add method:  O(1) / direct operation
+  - rest of the methods: O(n) / loop
 
 - Space Complexity:
-  O(1)
+  - all methods: O(n) / linkedlist and linear search
 
 ## Whiteboard
 
+![Problem Domain](./assets/cc30-pd.png)
+![Algorithm](./assets/cc30-algo.png)
+![Visual](./assets/cc30-visual.jpg)

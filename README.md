@@ -27,3 +27,5 @@ Challenge # | Link
 19 | [Binary Tree Sum](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/blob/binary-tree-sum/codechallenges/tree/binaryTree/binaryTree.js)
 26 | [Insertion Sort](https://github.com/bushra-401-advanced-javascript/401-data-structures-and-algorithms/tree/master/codechallenges/insertionSort)
 27 | [Merge Sort]()
+28 | [Quick Sort]()
+30 | [Hashtable]()
