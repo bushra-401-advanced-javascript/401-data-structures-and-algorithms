@@ -17,7 +17,8 @@
 - **Left Join Logic Summary:**   
     **a left join returns all the values from the left table, plus matched values from the right table or NULL in case of no matching join predicate**
 
-**Visual representation of Left Join, where `A` is the left table, and `B` is the right table:**
+**Visual representation of Left Join, where `A` is the left table, and `B` is the right table:**  
+
 ![SQL left join visual](https://lh5.googleusercontent.com/9VB4nUZCUr8abheRGjxx43KQaePDs0W0LweLrp3tUJ8KBYEBj4edcK-hZAKvQC5eBK7lzIlb_t6vu7l4sqTg_THb95wWCrG2SCYdPn-428hOHawNXYOXy8u0Aq_-rpNrWgwakzNY)
 
 ## Challenge Description
@@ -42,8 +43,16 @@
  ![i/o](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-33/dsa-33-io-table.png)
 
 ## Approach & Efficiency
+- used the Hashmap class from previous challenge
+- consditional statement and a loop
 
+### Big O
+- Space Complexity:  
+  O(n); where n is the number of elements in the results array
+
+- Time Complexity:  
+  O(n); where n is the number of elements in data array
 
 ## Whiteboard
-
-
+![whiteboard](./assets/cc33.png)
+![visual](./assets/cc33-visual.jpg)
