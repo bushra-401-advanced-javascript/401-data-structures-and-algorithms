@@ -59,41 +59,19 @@ Then we'll define the middle index, since that we'll be dividing the array in ha
 
 #### Iteration 1:
 
-- `i = 1`
-- `j = i -1 = 0`
-- `temp = 4`
-- `arr = [4, 8, 23, 42, 16, 15]`  
+![itreation-1](assets/cc27-1-1.jpg)
 
-![itreation-1](assets/cc26-1.jpg)
 
 #### Iteration 2:
 
-- `i = 2`
-- `j = i -1 = 1`
-- `temp = 23`
-- `arr = [4, 8, 23, 42, 16, 15]`  
-![itreation-2](assets/cc26-2.jpg)
+![itreation-1](assets/cc27-1-2.jpg)
+
 
 #### Iteration 3:
 
-- `i = 3`
-- `j = i -1 = 2`
-- `temp = 42`
-- `arr = [4, 8, 23, 42, 16, 15]`  
-![itreation-3](assets/cc26-3.jpg)
+![itreation-3](assets/cc27-2-1.jpg)
 
-#### Iteration 4:
+#### Iteration 4 + 5:
 
-- `i = 4`
-- `j = i -1 = 3`
-- `temp = 16`
-- `arr = [4, 8, 16, 23, 42, 15]`  
-![itreation-4](assets/cc26-4.jpg)
+![itreon-4](assets/cc27-2-2.jpg)
 
-#### Iteration 5:
-
-- `i = 5`
-- `j = i -1 = 4`
-- `temp = 15`
-- `arr = [4, 8, 15, 16, 23, 42]`  
-![itreation-5](assets/cc26-5.jpg)
