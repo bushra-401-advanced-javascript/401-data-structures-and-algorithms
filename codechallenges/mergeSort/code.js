@@ -26,13 +26,18 @@ function Merge(left, right, arr){
   let k = 0 ;
 
   while(i < left.length && j < right.length){
+
     if(left[i] <= right[j]){
+
       arr[k] = left[i];
       i++;
-    }else{
+    }
+    
+    else{
       arr[k] = right[j];
       j++;
     }
+
     k++;
   }
   if(i === left.length){
@@ -41,13 +46,17 @@ function Merge(left, right, arr){
       j++;
       k++;
     }
-  }else{
+  }
+
+  else{
     while(i < left.length){
       arr[k] = left[i];
       i++;
       k++;
     }
   }
+
   return arr;
 }
+
 console.log(Mergesort([8,4,23,42,16,15]));

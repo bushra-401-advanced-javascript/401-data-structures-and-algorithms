@@ -54,7 +54,8 @@ and using this array as input:
 - we'll trace the values in tables.
 - in each iteration, we compare an element with its previous.
 
-we start with the second element of the array, and evaluate wether or not it is less than the previous element (first element), we find that the second element is less than the first element, so we change the value of the second element to the value of the first element, then we update the value of the first element to the smallest value between the two, which is the value of the second element, we update the values and continue for all elements of the array.
+First we'll consider the edge case, if the array was empty or has one element, then we don't have to sort it.
+Then we'll define the middle index, since that we'll be dividing the array in halves, we need to know the middle index and split the array into left array and right array based on the middle index, and since the algorithm is recursive, we'll be splitting the array and merging the left and right side over and over as long as the length of the original is still larger than 1. 
 
 #### Iteration 1:
 
