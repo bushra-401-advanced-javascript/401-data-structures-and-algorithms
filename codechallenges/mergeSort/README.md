@@ -60,16 +60,14 @@ ALGORITHM Merge(left, right, arr)
 
 ### Big O
 
-- **Time Complexity: O(n^2)**  
-   The basic operation of this algorithm is comparison. This will happen  
-    `n * (n-1)` number of times, concluding the algorithm to be n squared.
-- **Space Complexity: O(1)**  
-   No additional space is being created. This array is being sorted in place, keeping the space at constant O(1).
+- **Time Complexity: O(nLog(n))**  
+
+- **Space Complexity: O(n)**  
+
 
 ## Whiteboard
 
-![it-1](assets/cc26-1.jpg)
-![it-2](assets/cc26-2.jpg)
-![it-3](assets/cc26-3.jpg)
-![it-4](assets/cc26-4.jpg)
-![it-5](assets/cc26-5.jpg)
+![it-1](assets/cc27-1-1.jpg)
+![it-2](assets/cc27-1-2.jpg)
+![it-3](assets/cc27-2-1.jpg)
+![it-4+5](assets/cc27-2-2.jpg)

@@ -64,7 +64,7 @@ Then we'll define the middle index, since that we'll be dividing the array in ha
 
 #### Iteration 2:
 
-![itreation-1](assets/cc27-1-2.jpg)
+![itreation-2](assets/cc27-1-2.jpg)
 
 
 #### Iteration 3:
@@ -73,5 +73,5 @@ Then we'll define the middle index, since that we'll be dividing the array in ha
 
 #### Iteration 4 + 5:
 
-![itreon-4](assets/cc27-2-2.jpg)
+![itreon-4+5](assets/cc27-2-2.jpg)
 
