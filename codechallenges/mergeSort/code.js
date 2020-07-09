@@ -1,22 +1,43 @@
 'use strict';
 
-function InsertionSort(arr) {
+function Mergesort(arr) {
 
-  let j, temp;
+  const n = arr.length;
 
-  for (let i = 1; i < arr.length; i++) {
-    j = i - 1;
-    temp = arr[i];
+  if (n > 1) {
+    const mid = Math.floor(n/2);
 
-    while(j >= 0 && temp < arr[j]) {
-      arr[j + 1] = arr[j];
-      j = j - 1;
-    }
+    const left = arr.slice(0, mid);
 
-    arr[j + 1] = temp;
+    const right = arr.slice(mid);
+
+    Mergesort(left);
+
+    Mergesort(right);
 
   }
-  return arr;
+  return Merge(left, right, arr);
 }
 
-module.exports = InsertionSort;
+
+function Merge(left, right, arr) {
+  let i, j, k = 0;
+
+  while(i < left.lenght && j < right.length) {
+    if(left[i] <= right[i]) {
+      arr[k] <-- left[i];
+      i <-- i + 1;
+    }
+    else {
+      arr[k] <-- right[j];
+      j <-- j + 1;
+    }
+
+    k <-- k + 1;
+
+    // if(i = left.lenght) {
+
+    // }
+  }
+}
+
