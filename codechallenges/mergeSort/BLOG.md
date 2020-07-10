@@ -54,24 +54,27 @@ and using this array as input:
 - we'll trace the values in tables.
 - in each iteration, we compare an element with its previous.
 
-First we'll consider the edge case, if the array was empty or has one element, then we don't have to sort it.
+## Base Case
+First we'll consider the base case, if the array was empty or has one element, then we don't have to sort it, so the recursive process will be terminated when the length of the array is less or equal to 1.  
+
+## Recursive Case
 Then we'll define the middle index, since that we'll be dividing the array in halves, we need to know the middle index and split the array into left array and right array based on the middle index, and since the algorithm is recursive, we'll be splitting the array and merging the left and right side over and over as long as the length of the original is still larger than 1. 
 
-#### Iteration 1:
+#### Sort 1:
 
-![itreation-1](assets/cc27-1-1.jpg)
-
-
-#### Iteration 2:
-
-![itreation-2](assets/cc27-1-2.jpg)
+![sort-1](assets/cc27-1-1.jpg)
 
 
-#### Iteration 3:
+#### Sort 2:
 
-![itreation-3](assets/cc27-2-1.jpg)
+![sort-2](assets/cc27-1-2.jpg)
 
-#### Iteration 4 + 5:
 
-![itreon-4+5](assets/cc27-2-2.jpg)
+#### Sort 3:
+
+![sort-3](assets/cc27-2-1.jpg)
+
+#### Sort 4 + 5:
+
+![sort-4+5](assets/cc27-2-2.jpg)
 

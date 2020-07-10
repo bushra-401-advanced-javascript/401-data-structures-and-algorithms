@@ -56,7 +56,6 @@ ALGORITHM Merge(left, right, arr)
 
 - Provide a visual step through for each of the sample arrays based on the provided pseudo code
 - Convert the pseudo-code into working code Javascript
-- Present a complete set of working tests
 
 ### Big O
 
@@ -67,7 +66,7 @@ ALGORITHM Merge(left, right, arr)
 
 ## Whiteboard
 
-![it-1](assets/cc27-1-1.jpg)
-![it-2](assets/cc27-1-2.jpg)
-![it-3](assets/cc27-2-1.jpg)
-![it-4+5](assets/cc27-2-2.jpg)
+![sort-1](assets/cc27-1-1.jpg)
+![sort-2](assets/cc27-1-2.jpg)
+![sort-3](assets/cc27-2-1.jpg)
+![sort-4+5](assets/cc27-2-2.jpg)
