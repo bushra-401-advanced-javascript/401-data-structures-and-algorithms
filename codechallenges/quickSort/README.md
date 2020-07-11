@@ -53,14 +53,22 @@ ALGORITHM Swap(arr, i, low)
 
 - Provide a visual step through for each of the sample arrays based on the provided pseudo code
 - Convert the pseudo-code into working code Javascript
-- Present a complete set of working tests
 
 ### Big O
 
-- **Time Complexity: O(n log n)**  
+- **Time Complexity: O(n^2) => comparison**  
 
-- **Space Complexity: O(n)**  
+- **Space Complexity: O(1) => in-place operation/constant space**  
 
 
 ## Whiteboard
 
+![pass1](./assets/cc28-1.jpg)
+
+![pass2](./assets/cc28-2.jpg)
+
+![pass3](./assets/cc28-3.jpg)
+
+![pass4](./assets/cc28-4.jpg)
+
+![pass5](./assets/cc28-5.jpg)

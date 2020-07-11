@@ -49,14 +49,18 @@ and using this array as input:
 - we'll trace the values in tables.
 - in each iteration, we compare an element with its previous.
 
-we start with the second element of the array, and evaluate wether or not it is less than the previous element (first element), we find that the second element is less than the first element, so we change the value of the second element to the value of the first element, then we update the value of the first element to the smallest value between the two, which is the value of the second element, we update the values and continue for all elements of the array.
 
-#### Iteration 1:
+####  1:
+![pass1](./assets/cc28-1.jpg)
 
-<!-- - `i = 1`
-- `j = i -1 = 0`
-- `temp = 4`
-- `arr = [4, 8, 23, 42, 16, 15]`   -->
+####  2:
+![pass2](./assets/cc28-2.jpg)
 
-![]()
+####  3:
+![pass3](./assets/cc28-3.jpg)
 
+####  4:
+![pass4](./assets/cc28-4.jpg)
+
+####  5:
+![pass5](./assets/cc28-5.jpg)
