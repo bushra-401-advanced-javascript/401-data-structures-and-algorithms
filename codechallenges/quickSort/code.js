@@ -8,6 +8,7 @@ function QuickSort(arr, left, right) {
 
     QuickSort(arr, position + 1, right);
   }
+  return arr;
 }
 
 function Partition(arr, left, right) {
@@ -21,9 +22,9 @@ function Partition(arr, left, right) {
       Swap(arr, i ,low);
     }
 
-    Swap(arr, right, low + 1);
-    return low + 1;
   }
+  Swap(arr, right, low + 1);
+  return low + 1;
 }
 
 function Swap(arr, i, low) {
@@ -32,5 +33,8 @@ function Swap(arr, i, low) {
   arr[i] = arr[low];
   arr[low] = temp;
 }
+
+
+console.log(QuickSort([8,4,23,42,16,15], 0, 5));
 
 module.exports = QuickSort;
