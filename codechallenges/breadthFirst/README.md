@@ -41,6 +41,11 @@
 
 ## Solution
 
+![whiteboard](./assets/cc36.png)
+**Visual Exaple:**  
+![visual](https://i1.wp.com/algorithms.tutorialhorizon.com/files/2015/05/Graph-BFS.gif)
+
 ## Requirements
 
 - **`graph` class module - graph implementation**
+- **`queue` -  array implementation or a class module**
