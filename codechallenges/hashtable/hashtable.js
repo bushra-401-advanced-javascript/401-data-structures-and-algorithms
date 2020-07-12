@@ -71,31 +71,46 @@ class Hashmap {
     let hash = this.hash(key);
     if (this.table[hash]) {
       let values = this.table[hash].values(); //array of the data entries in the LL (at the hashed index)
-      values.forEach((entry, i) => {
+      let keyVal;
+      values.forEach(entry => {
         if(Object.keys(entry)[0] === key) {
-          return Object.values(entry);
+          keyVal = Object.values(entry);
         }
       });
+      return keyVal[0];
     }
     else {
-      return 'This key doesn\'t exist in the table :(';
+      return `Sorry, the key (${key}) doesn\'t exist in the table :(`;
     }
   }
   
   contains(key) {
     let hash = this.hash(key);
+    let contains = false;
     if (this.table[hash]) {
       let values = this.table[hash].values(); //array of the data entries in the LL (at the hashed index)
       values.forEach((entry) => {
         if(Object.keys(entry)[0] === key) {
-          return true;
+          contains = true;  
         }
-        else return false;
-      });
+        else contains = false;
+    });
+    return `contains (${key}): ${contains}`;
     }
     else {
-      return false;
+      return `contains (${key}): ${contains}`;
     }  
   }
 }
 
+
+let map = new Hashmap(1024);
+map.add('guid', 'usher');
+map.add('outift' ,'garb');
+map.add('fond' ,'enamored');
+
+console.log(map.hash('guid'));
+console.log(map.get('outift'));
+console.log(map.get('follow'));
+console.log(map.contains('fond'));
+console.log(map.contains('follow'));
