@@ -1,3 +1,5 @@
+'use strict';
+
 class Vertex {
   constructor(value) {
     this.value = value;
@@ -81,6 +83,8 @@ class Graph {
 }
 
 
+module.exports = {Vertex, Edge, Graph};
+
 const graph = new Graph();
 
 const two = new Vertex(2);
@@ -105,4 +109,4 @@ graph.addEdge(two, seven);
 
 // console.log('Neighbors of node two: ', graph.getNeighbors(two));
 
-graph.size();
+// graph.size();
