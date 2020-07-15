@@ -42,9 +42,12 @@ class Graph {
     } 
     else {
       // get the neighbours of the start vertex and add to them 
-      const adjacencies = this._adjancyList.get(startVertex);
+      const startAdjacencies = this._adjancyList.get(startVertex);
       // add edge with vertex and weight
-      adjacencies.push(new Edge(endVertex, weight));
+      startAdjacencies.push(new Edge(endVertex, weight));
+      
+      const endAdjacencies = this._adjancyList.get(endVertex);
+      endAdjacencies.push(new Edge(startVertex, weight));
     }
   }
 
