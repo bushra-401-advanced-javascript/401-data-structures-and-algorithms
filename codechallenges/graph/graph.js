@@ -68,7 +68,7 @@ class Graph {
     if (this._adjancyList.has(node)) {
       return this._adjancyList.get(node);
     } else {
-      console.log('vertex does not exist!!');
+      console.log(`vertex: ${node} does not exist..`);
     }
   }
 
