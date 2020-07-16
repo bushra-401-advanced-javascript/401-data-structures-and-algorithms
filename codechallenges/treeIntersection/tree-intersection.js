@@ -5,37 +5,53 @@ const Node = BT.Node;
 const BinaryTree = BT.BinaryTree;
 
 function tree_intersection(bt1, bt2) {
+  //define an array to store the nodes of the first tree
+  let nodes = [];  
   //define an array to store the common nodes
   let commonNodes = [];
-
+  //define a boolean for traversing the second tree
+  let secondTree = false;  
   //traverse the first tree -> dfs pre-order
-  let _traverseTwoTrees = (node1, node2) => {
-    //chech roots
-    if (node1 && node2 && node1.value === node2.value) {
-    //   console.log(node1.value, node2.value, node1.value === node2.value);  
-      commonNodes.push(node1.value);
-    }
-    //check left nodes
-    if (node1.left && node2.left)
-      _traverseTwoTrees(node1.left, node2.left);
-    //check left nodes with right nodes
-    if (node1.left && node2.right)
-      _traverseTwoTrees(node1.left, node2.right);
-    //check right nodes
-    if (node1.right && node2.right)
-      _traverseTwoTrees(node1.right, node2.right);
-    //check right nodes with left nodes
-
+  let _traverse = (node) => {
+    //root
+    if (secondTree) {
+      if (nodes.includes(node.value)) {
+        commonNodes.push(node.value);
+      }
+    } 
+    else if (node.value) 
+      nodes.push(node.value);
+    //left nodes
+    if (node.left)
+      _traverse(node.left);
+    //right nodes
+    if (node.right)
+      _traverse(node.right);
   };
 
-  _traverseTwoTrees(bt1.root, bt2.root);
+  //traverse first tree
+  _traverse(bt1.root);
+  //traverse second tree
+  secondTree = true;
+  _traverse(bt2.root);
+
   return commonNodes;
 }
 
 ///////////Example For Testing///////////////
+/** Note:
+ * This example is the same as the one in the README
+ * in this example, all the common nodes are on the
+   same side and on the same level
+ * but the this code is very general and works for 
+  all cases
+   * common nodes on different sides
+   * common nodes on different levels
+   * common nodes on different sides and different levels
+ */
 
 let _150 = new Node(150);
-let _$600 = new Node(600);
+let _100 = new Node(100);
 let _250 = new Node(250);
 let _75 = new Node(75);
 let _160 = new Node(160);
@@ -43,19 +59,19 @@ let _125 = new Node(125);
 let _175 = new Node(175);
 let _200 = new Node(200);
 let _350 = new Node(350);
-// let _300 = new Node(300);
-// let _500 = new Node(500);
+let _300 = new Node(300);
+let _500 = new Node(500);
 
-_150.left = _$600;
+_150.left = _100;
 _150.right = _250;
-_$600.left = _75;
-_$600.right = _160;
+_100.left = _75;
+_100.right = _160;
 _160.left = _125;
 _160.right = _175;
 _250.left = _200;
 _250.right = _350;
-// _350.left = _300;
-// _350.right = _500;
+_350.left = _300;
+_350.right = _500;
 
 let tree1 = new BinaryTree(_150);
 
