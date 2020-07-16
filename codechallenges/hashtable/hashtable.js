@@ -94,8 +94,8 @@ class Hashmap {
           contains = true;  
         }
         else contains = false;
-    });
-    return `contains (${key}): ${contains}`;
+      });
+      return `contains (${key}): ${contains}`;
     }
     else {
       return `contains (${key}): ${contains}`;
@@ -109,8 +109,14 @@ map.add('guid', 'usher');
 map.add('outift' ,'garb');
 map.add('fond' ,'enamored');
 
-console.log(map.hash('guid'));
-console.log(map.get('outift'));
-console.log(map.get('follow'));
-console.log(map.contains('fond'));
-console.log(map.contains('follow'));
+// console.log(map.hash('guid'));
+// console.log(map.get('outift'));
+// console.log(map.get('follow'));
+// console.log(map.contains('fond'));
+// console.log(map.contains('follow'));
+
+module.exports = {
+  node: Node,
+  linkedlist: LinkedList,
+  hashmap: Hashmap,
+};
