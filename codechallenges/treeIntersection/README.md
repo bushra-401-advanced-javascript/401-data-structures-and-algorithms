@@ -22,6 +22,26 @@ Find common values in 2 binary trees.
 Common Node values   
 `[100,160,125,175,200,350,500]`
 
+## Approach & Efficiency
+
+### Approach:   
+**Recursive**  
+- recursion function
+- conditional statement
+
+### Big O:
+
+- **Time Complexity**:  
+
+  **O(n+m)**
+  - `n`: number of nodes in the first tree 
+  - `m`: number of nodes in the second tree
+
+- **Space Complexity**:
+
+  **O(n+m)**
+  - `n`: number of nodes in the first tree
+  - `m`: number of nodes in the second tree
 
 ## Whiteboard
 ![whitebaord](./assets/cc32.png)

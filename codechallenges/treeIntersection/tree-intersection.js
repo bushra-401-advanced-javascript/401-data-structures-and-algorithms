@@ -14,12 +14,12 @@ function tree_intersection(bt1, bt2) {
   //traverse the first tree -> dfs pre-order
   let _traverse = (node) => {
     //root
-    if (secondTree) {
+    if (secondTree) { //when traversing the second tree
       if (nodes.includes(node.value)) {
         commonNodes.push(node.value);
       }
     } 
-    else if (node.value) 
+    else if (node.value) //when traversing the first tree
       nodes.push(node.value);
     //left nodes
     if (node.left)
