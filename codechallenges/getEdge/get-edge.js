@@ -31,6 +31,7 @@ function hasDirectFlights(itenerary, routmap) {
     return `True, ${cost}$`;
   }
 }
+
 /////////////////////////////////
 
 //////////Test Example//////////
